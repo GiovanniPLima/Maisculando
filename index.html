@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" /> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script data-ad-client="ca-pub-3768349682424281" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+</script>
+ <title>
+     Maisculando
+ </title>
+ </head>
+    <body>
+        <div>
+        <table></table>
+        </div>
+        <div align="center">
+            <h2>
+                Converta seu Texto Para Maisculo ou Minusculo
+            </h2>
+        </div>
+        <!--Area de Apresentação-->
+        <div align=center>
+           <h3>
+               Escreva o Texto abaixo:
+           </h3>
+        </div>
+        <!--Area de  Inserir Texto-->
+        <div align=center>
+            <textarea id="text_inserido" cols="55" rows="10"  placeholder="Digite seu texto aqui"></textarea>
+        </div>
+        <!--Area de Botões-->
+        <br/>
+        <div align=center>
+            <button id="btn_mais" >
+                    MAIUSCULO
+            </button>
+            <button id="btn_menos" onClick="">
+                minusculo
+        </button>
+        <button type="submit" id="btn_l" onClick="">
+            Primeira letra da frase
+        </button>
+        <button type="submit" id="btn_primal" onClick="">
+            Primeira Letra Da Palavra
+    </button>
+    
+        </div>
+        <!--Funções JavaScript-->
+        <div>
+            <script language="javascript" type="text/javascript">
+            //Deixar Maisculo
+           let textarea = document.querySelector('#text_inserido');
+           let btn_mais = document.querySelector('#btn_mais');
+          
+                btn_mais.onclick = function  (){
+                   alert(textarea.value.toUpperCase())
+                }
+                //Deixar Minusculo 
+                let btn_menos = document.querySelector('#btn_menos');
+                btn_menos.onclick = function  (){
+                   alert(textarea.value.toLowerCase())
+                }
+                //Deixa a Primeira Letra Maiscula 
+                let btn_l = document.querySelector('#btn_l');
+                btn_l.onclick = function (){
+                    alert(textarea.value.charAt(0).toUpperCase() + textarea.value.slice(1).toLowerCase())
+                    
+                }
+                //Deixa a primeira letra de cada frase maiuscula
+                let btn_primal = document.querySelector("#btn_primal");
+                btn_primal.onclick = function (){
+                   alert(textarea.value.toLowerCase().replace(/(?:^|\s)\S/g, function(a){
+                        return a.toUpperCase();
+
+                    }));
+                   
+                  
+
+                   
+                }
+            </script>
+
+
+
+        </div>
+    </body>
+
+
+</html>
