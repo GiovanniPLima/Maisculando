@@ -1,90 +1,196 @@
 <!DOCTYPE html>
-<html>
- <head>
- <meta charset="utf-8" /> 
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script data-ad-client="ca-pub-3768349682424281" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
- <title>
-     Maisculando
- </title>
- </head>
+<html lang="en">
+    <head>
+      <link rel="shortcut icon" href="favicon.ico" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css">
+        <title>
+            Curriculum Giovanni
+        </title>
+    </head>
     <body>
-        <div>
-        <table></table>
-        </div>
-        <div align="center">
-            <h2>
-                Converta seu Texto Para Maisculo ou Minusculo
-            </h2>
-        </div>
-        <!--Area de Apresentação-->
-        <div align=center>
-           <h3>
-               Escreva o Texto abaixo:
-           </h3>
-        </div>
-        <!--Area de  Inserir Texto-->
-        <div align=center>
-            <textarea id="text_inserido" cols="55" rows="10"  placeholder="Digite seu texto aqui"></textarea>
-        </div>
-        <!--Area de Botões-->
-        <br/>
-        <div align=center>
-            <button id="btn_mais" >
-                    MAIUSCULO
-            </button>
-            <button id="btn_menos" onClick="">
-                minusculo
-        </button>
-        <button type="submit" id="btn_l" onClick="">
-            Primeira letra da frase
-        </button>
-        <button type="submit" id="btn_primal" onClick="">
-            Primeira Letra Da Palavra
-    </button>
-    
-        </div>
-        <!--Funções JavaScript-->
-        <div>
-            <script language="javascript" type="text/javascript">
-            //Deixar Maisculo
-           let textarea = document.querySelector('#text_inserido');
-           let btn_mais = document.querySelector('#btn_mais');
+      <!--NavBar - Menu-->
+      <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                  Inicio
+                </a>
           
-                btn_mais.onclick = function  (){
-                   alert(textarea.value.toUpperCase())
-                }
-                //Deixar Minusculo 
-                let btn_menos = document.querySelector('#btn_menos');
-                btn_menos.onclick = function  (){
-                   alert(textarea.value.toLowerCase())
-                }
-                //Deixa a Primeira Letra Maiscula 
-                let btn_l = document.querySelector('#btn_l');
-                btn_l.onclick = function (){
-                    alert(textarea.value.charAt(0).toUpperCase() + textarea.value.slice(1).toLowerCase())
-                    
-                }
-                //Deixa a primeira letra de cada frase maiuscula
-                let btn_primal = document.querySelector("#btn_primal");
-                btn_primal.onclick = function (){
-                   alert(textarea.value.toLowerCase().replace(/(?:^|\s)\S/g, function(a){
-                        return a.toUpperCase();
+                <a class="navbar-item" href="contato.html">
+                  Contato
+                </a>
+          </div>
+        </nav>
+        <!--Fim do Menu-->
+      </header>
+      <section class="section">
+        <div class="container">
+        <div class="columns">
+          <div class="column">
+            <!--Card Esquerdo-->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="eu.jpeg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Giovanni  Lima</p>
+                    <p class="subtitle is-6">
+                      <a href="https://github.com/GiovanniPLima">Github</p></a>
+                      <p class="subtitle is-6">
+                        <a href="https://www.linkedin.com/in/giovanni-pajeu-lima/">Linkedin</p></a>
+                  </div>
+                </div>
+                <div class="content">
+                 <span class="tag is-dark  is-medium">Desenvolvedor FullStack JavaScript</span>
+                 <br>
+                 <br>
+                 <p >(11)9-7327-3915</p>
+                 <p>giovannipajeu@gmail.com</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Direito-->
+          <div class="column is-9">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                 Sobre Mim
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  Tenho 23 anos, solteiro, Estudante do curso de Sistemas para Internet.<br>
+                  Desenvolvedor desde os 18 anos de idade e entusiasta de segurança da informação<br>
+                  Estou Buscando Recolocação no Mercado de TI, Na Aréa de Dev FullStack JavaScript
+                  <br>  
+                </div>
+              </div> 
+            </div>
+               <!--Experiencia 1-->
+               <div class="column">
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                     Experiencias
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <figure class="image is-128x128">
+                          <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                        </figure></div>
+  
+                        <div class="column is-9">
+                         <p class="title is-5">Auxiliar de Contas a Pagar
+                          <span class="tag is-dark  is-medium">11/20 - </span>
+                         </p>
+                         <p> -Ajudar na montagem da estrutura de banco de dados e codificação de programas, planejando etapas e ações de trabalho.
+                           <br>
+                           -Participar da criação de sites utilizando as linguagens HTML, incluindo JavaScript,CSS, ReactJs, NodeJs e python
+                         </p>
+                        </div>
+                      <br>  
+                    </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            <!--Experiencia 2-->
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                   Experiencias
+                  </p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <div class="columns">
+                      <div class="column">
+                        <figure class="image is-128x128">
+                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                      </figure></div>
 
-                    }));
-                   
-                  
+                      <div class="column is-9">
+                       <p class="title is-5">Desenvolvedor FullStack Junior
+                        <span class="tag is-dark  is-medium">05/19 - 05/20</span>
+                       </p>
+                       <p>-Desenvolver sistemas em linguagem HTML, CSS javascript, ReactJs, NodeJs <br>
+                        -Realizar correções em sistemas para atender às necessidades dos usuários.
+                        <br>
+                        -Desenvolver trabalhos de montagem, depuração e testes de programas já desenvolvidos.</p>
+                      </div>
+                    <br>  
+                  </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <!--Experiencia 3-->
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                   Experiencias
+                  </p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <div class="columns">
+                      <div class="column">
+                        <figure class="image is-128x128">
+                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                      </figure></div>
 
-                   
-                }
-            </script>
-
-
-
+                      <div class="column is-9">
+                       <p class="title is-5">Estágio em Desenvolvimento Web
+                        <span class="tag is-dark  is-medium">05/18 - 05/19</span>
+                       </p>
+                       <p> -Ajudar na montagem da estrutura de banco de dados e codificação de programas, planejando etapas e ações de trabalho.
+                         <br>
+                         -Participar da criação de sites utilizando as linguagens HTML, incluindo JavaScript,CSS, ReactJs, NodeJs e python
+                       </p>
+                      </div>
+                    <br>  
+                  </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            
+          </div>
         </div>
+      </section>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            Desenvolvido com <strong>Bulma</strong> Por Giovanni Pajeu Lima.
+           
+          </p>
+        </div>
+      </footer>
     </body>
-
-
 </html>
