@@ -1,2 +1,2 @@
-# Meu Curriculo feito com HTML, CSS e Bulma
+# Site de Ajuda a Escritores
 https://maisculando.000webhostapp.com
